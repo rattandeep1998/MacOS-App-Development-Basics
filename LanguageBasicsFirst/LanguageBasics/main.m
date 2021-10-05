@@ -10,6 +10,7 @@
 #import "ScreenUpdater.h"
 #import "Car+Car_Performance.h"
 #import "RandomClass.h"
+#import "BlocksDemo.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -50,6 +51,39 @@ int main(int argc, const char * argv[]) {
         };
         
         NSLog(@"String value of Integer: %@", intToString(10));
+        
+        /// Passing blocks to function example
+        BlocksDemo * demoObj = [[BlocksDemo alloc] init];
+        [demoObj blockToFunction:blockVar];
+        
+        /// Example of block level variables
+        __block int blkVar = 0;
+        
+        int (^blockVarDemo)(int) = ^(int arg1) {
+            blkVar = 2;
+            return arg1 * blkVar;
+        };
+                
+        NSLog(@"Result of integer block variable: %d", blockVarDemo(3));
+        
+#pragma mark - Arrays
+        /// Fixed Arrays
+        NSArray *arrObjects = [[NSArray alloc] initWithObjects:@"2", @"3", @"4", nil];
+        
+        /// Mutable Arrays
+        NSMutableArray *arrayOfCars = [[NSMutableArray alloc] init];
+        
+        [arrayOfCars addObject:myCar];
+        
+        Car *firstCarObj = (Car *)[arrayOfCars firstObject];
+        
+        NSLog(@"Length of array: %lu", arrayOfCars.count);
+        
+#pragma mark - Dictionary
+        /// Dictionary
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+        [dict setValue:@"ABC" forKey:@"1"];
+        
         
     }
     return 0;
