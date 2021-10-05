@@ -11,6 +11,7 @@
 #import "Car+Car_Performance.h"
 #import "RandomClass.h"
 #import "BlocksDemo.h"
+#import "MemoryManagementDemo.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -84,6 +85,10 @@ int main(int argc, const char * argv[]) {
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
         [dict setValue:@"ABC" forKey:@"1"];
         
+#pragma mark - Memory Management
+        MemoryManagementDemo *dummyObject = [[MemoryManagementDemo alloc] initWith:50];
+        
+        /// Memory Management Detailed Links: https://stackoverflow.com/questions/4510913/objective-c-assign-copy-retain
         
     }
     return 0;
