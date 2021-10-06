@@ -7,7 +7,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController {
+    NSTextView* desclabel;
+}
 
 #pragma mark - IB Outlet
 
@@ -23,5 +25,9 @@
 
 - (IBAction)increaseFontSizeTapped:(NSButton *)sender;
 
+- (IBAction)sendOptionChoose:(NSButton *)sender;
+
+
+- (IBAction)themeSelectorTapped:(NSButton *)sender;
 @end
 

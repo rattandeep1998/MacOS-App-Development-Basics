@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4415B117270D7DB700FCA191 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4415B116270D7DB700FCA191 /* ListViewController.m */; };
+		44215A37270D6FA00018DFBC /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44215A36270D6FA00018DFBC /* BrowserViewController.m */; };
 		44CF3C47270C1D2B00FEECAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF3C46270C1D2B00FEECAB /* AppDelegate.m */; };
 		44CF3C4A270C1D2B00FEECAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF3C49270C1D2B00FEECAB /* ViewController.m */; };
 		44CF3C4C270C1D2C00FEECAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CF3C4B270C1D2C00FEECAB /* Assets.xcassets */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4415B115270D7DB700FCA191 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		4415B116270D7DB700FCA191 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		44215A35270D6FA00018DFBC /* BrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		44215A36270D6FA00018DFBC /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		44CF3C42270C1D2B00FEECAB /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CF3C45270C1D2B00FEECAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44CF3C46270C1D2B00FEECAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441F55ED270D8B5F00E18EDD /* BrowserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44215A35270D6FA00018DFBC /* BrowserViewController.h */,
+				44215A36270D6FA00018DFBC /* BrowserViewController.m */,
+			);
+			path = BrowserViewController;
+			sourceTree = "<group>";
+		};
+		441F55EE270D8B9600E18EDD /* LandingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44CF3C48270C1D2B00FEECAB /* ViewController.h */,
+				44CF3C49270C1D2B00FEECAB /* ViewController.m */,
+			);
+			path = LandingViewController;
+			sourceTree = "<group>";
+		};
+		441F55F0270D8BB200E18EDD /* HobbiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4415B115270D7DB700FCA191 /* ListViewController.h */,
+				4415B116270D7DB700FCA191 /* ListViewController.m */,
+			);
+			path = HobbiesViewController;
+			sourceTree = "<group>";
+		};
 		44CF3C39270C1D2B00FEECAB = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +134,13 @@
 			children = (
 				44CF3C45270C1D2B00FEECAB /* AppDelegate.h */,
 				44CF3C46270C1D2B00FEECAB /* AppDelegate.m */,
-				44CF3C48270C1D2B00FEECAB /* ViewController.h */,
-				44CF3C49270C1D2B00FEECAB /* ViewController.m */,
 				44CF3C4B270C1D2C00FEECAB /* Assets.xcassets */,
 				44CF3C4D270C1D2C00FEECAB /* Main.storyboard */,
 				44CF3C50270C1D2C00FEECAB /* main.m */,
 				44CF3C52270C1D2C00FEECAB /* MyFirstApp.entitlements */,
+				441F55EE270D8B9600E18EDD /* LandingViewController */,
+				441F55ED270D8B5F00E18EDD /* BrowserViewController */,
+				441F55F0270D8BB200E18EDD /* HobbiesViewController */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -257,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4415B117270D7DB700FCA191 /* ListViewController.m in Sources */,
 				44CF3C4A270C1D2B00FEECAB /* ViewController.m in Sources */,
+				44215A37270D6FA00018DFBC /* BrowserViewController.m in Sources */,
 				44CF3C51270C1D2C00FEECAB /* main.m in Sources */,
 				44CF3C47270C1D2B00FEECAB /* AppDelegate.m in Sources */,
 			);
