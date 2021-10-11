@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44C065FE27101E0D008D0EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C065FD27101E0D008D0EF1 /* AppDelegate.m */; };
+		44C0660127101E0D008D0EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0660027101E0D008D0EF1 /* ViewController.m */; };
+		44C0660327101E0F008D0EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C0660227101E0F008D0EF1 /* Assets.xcassets */; };
+		44C0660627101E0F008D0EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C0660427101E0F008D0EF1 /* Main.storyboard */; };
+		44C0660827101E0F008D0EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0660727101E0F008D0EF1 /* main.m */; };
+		44C0661327101E0F008D0EF1 /* PersistentStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0661227101E0F008D0EF1 /* PersistentStorageTests.m */; };
+		44C0661D27101E0F008D0EF1 /* PersistentStorageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0661C27101E0F008D0EF1 /* PersistentStorageUITests.m */; };
+		44C0661F27101E0F008D0EF1 /* PersistentStorageUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0661E27101E0F008D0EF1 /* PersistentStorageUITestsLaunchTests.m */; };
+		44C0662D27101FD4008D0EF1 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0662C27101FD4008D0EF1 /* PersonModel.m */; };
+		44C0663027102028008D0EF1 /* PersistentStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C0662F27102028008D0EF1 /* PersistentStoreController.m */; };
+		44C066332710262F008D0EF1 /* DataModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C066322710262F008D0EF1 /* DataModelController.m */; };
+		44C06638271027C3008D0EF1 /* ViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C06637271027C3008D0EF1 /* ViewControllerViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44C0660F27101E0F008D0EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C065F127101E0D008D0EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C065F827101E0D008D0EF1;
+			remoteInfo = PersistentStorage;
+		};
+		44C0661927101E0F008D0EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C065F127101E0D008D0EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C065F827101E0D008D0EF1;
+			remoteInfo = PersistentStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44C065F927101E0D008D0EF1 /* PersistentStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistentStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C065FC27101E0D008D0EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44C065FD27101E0D008D0EF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44C065FF27101E0D008D0EF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44C0660027101E0D008D0EF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44C0660227101E0F008D0EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C0660527101E0F008D0EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44C0660727101E0F008D0EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44C0660927101E0F008D0EF1 /* PersistentStorage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersistentStorage.entitlements; sourceTree = "<group>"; };
+		44C0660E27101E0F008D0EF1 /* PersistentStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistentStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C0661227101E0F008D0EF1 /* PersistentStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentStorageTests.m; sourceTree = "<group>"; };
+		44C0661827101E0F008D0EF1 /* PersistentStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistentStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C0661C27101E0F008D0EF1 /* PersistentStorageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentStorageUITests.m; sourceTree = "<group>"; };
+		44C0661E27101E0F008D0EF1 /* PersistentStorageUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentStorageUITestsLaunchTests.m; sourceTree = "<group>"; };
+		44C0662B27101FD4008D0EF1 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		44C0662C27101FD4008D0EF1 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		44C0662E27102028008D0EF1 /* PersistentStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistentStoreController.h; sourceTree = "<group>"; };
+		44C0662F27102028008D0EF1 /* PersistentStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentStoreController.m; sourceTree = "<group>"; };
+		44C066312710262F008D0EF1 /* DataModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModelController.h; sourceTree = "<group>"; };
+		44C066322710262F008D0EF1 /* DataModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataModelController.m; sourceTree = "<group>"; };
+		44C06636271027C3008D0EF1 /* ViewControllerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerViewModel.h; sourceTree = "<group>"; };
+		44C06637271027C3008D0EF1 /* ViewControllerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44C065F627101E0D008D0EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0660B27101E0F008D0EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0661527101E0F008D0EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44C065F027101E0D008D0EF1 = {
+			isa = PBXGroup;
+			children = (
+				44C065FB27101E0D008D0EF1 /* PersistentStorage */,
+				44C0661127101E0F008D0EF1 /* PersistentStorageTests */,
+				44C0661B27101E0F008D0EF1 /* PersistentStorageUITests */,
+				44C065FA27101E0D008D0EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44C065FA27101E0D008D0EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44C065F927101E0D008D0EF1 /* PersistentStorage.app */,
+				44C0660E27101E0F008D0EF1 /* PersistentStorageTests.xctest */,
+				44C0661827101E0F008D0EF1 /* PersistentStorageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44C065FB27101E0D008D0EF1 /* PersistentStorage */ = {
+			isa = PBXGroup;
+			children = (
+				44C065FC27101E0D008D0EF1 /* AppDelegate.h */,
+				44C065FD27101E0D008D0EF1 /* AppDelegate.m */,
+				44C0660227101E0F008D0EF1 /* Assets.xcassets */,
+				44C0660427101E0F008D0EF1 /* Main.storyboard */,
+				44C0660727101E0F008D0EF1 /* main.m */,
+				44C0660927101E0F008D0EF1 /* PersistentStorage.entitlements */,
+				44C611752713EF8E00A24C08 /* ViewController */,
+				44C0663527102788008D0EF1 /* ViewModel */,
+				44C0663427102760008D0EF1 /* Model */,
+			);
+			path = PersistentStorage;
+			sourceTree = "<group>";
+		};
+		44C0661127101E0F008D0EF1 /* PersistentStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				44C0661227101E0F008D0EF1 /* PersistentStorageTests.m */,
+			);
+			path = PersistentStorageTests;
+			sourceTree = "<group>";
+		};
+		44C0661B27101E0F008D0EF1 /* PersistentStorageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44C0661C27101E0F008D0EF1 /* PersistentStorageUITests.m */,
+				44C0661E27101E0F008D0EF1 /* PersistentStorageUITestsLaunchTests.m */,
+			);
+			path = PersistentStorageUITests;
+			sourceTree = "<group>";
+		};
+		44C0663427102760008D0EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44C0662B27101FD4008D0EF1 /* PersonModel.h */,
+				44C0662C27101FD4008D0EF1 /* PersonModel.m */,
+				44C0662E27102028008D0EF1 /* PersistentStoreController.h */,
+				44C0662F27102028008D0EF1 /* PersistentStoreController.m */,
+				44C066312710262F008D0EF1 /* DataModelController.h */,
+				44C066322710262F008D0EF1 /* DataModelController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44C0663527102788008D0EF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44C06636271027C3008D0EF1 /* ViewControllerViewModel.h */,
+				44C06637271027C3008D0EF1 /* ViewControllerViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44C611752713EF8E00A24C08 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44C065FF27101E0D008D0EF1 /* ViewController.h */,
+				44C0660027101E0D008D0EF1 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44C065F827101E0D008D0EF1 /* PersistentStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C0662227101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorage" */;
+			buildPhases = (
+				44C065F527101E0D008D0EF1 /* Sources */,
+				44C065F627101E0D008D0EF1 /* Frameworks */,
+				44C065F727101E0D008D0EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistentStorage;
+			productName = PersistentStorage;
+			productReference = 44C065F927101E0D008D0EF1 /* PersistentStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44C0660D27101E0F008D0EF1 /* PersistentStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C0662527101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorageTests" */;
+			buildPhases = (
+				44C0660A27101E0F008D0EF1 /* Sources */,
+				44C0660B27101E0F008D0EF1 /* Frameworks */,
+				44C0660C27101E0F008D0EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C0661027101E0F008D0EF1 /* PBXTargetDependency */,
+			);
+			name = PersistentStorageTests;
+			productName = PersistentStorageTests;
+			productReference = 44C0660E27101E0F008D0EF1 /* PersistentStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44C0661727101E0F008D0EF1 /* PersistentStorageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C0662827101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorageUITests" */;
+			buildPhases = (
+				44C0661427101E0F008D0EF1 /* Sources */,
+				44C0661527101E0F008D0EF1 /* Frameworks */,
+				44C0661627101E0F008D0EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C0661A27101E0F008D0EF1 /* PBXTargetDependency */,
+			);
+			name = PersistentStorageUITests;
+			productName = PersistentStorageUITests;
+			productReference = 44C0661827101E0F008D0EF1 /* PersistentStorageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44C065F127101E0D008D0EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					44C065F827101E0D008D0EF1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					44C0660D27101E0F008D0EF1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 44C065F827101E0D008D0EF1;
+					};
+					44C0661727101E0F008D0EF1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 44C065F827101E0D008D0EF1;
+					};
+				};
+			};
+			buildConfigurationList = 44C065F427101E0D008D0EF1 /* Build configuration list for PBXProject "PersistentStorage" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44C065F027101E0D008D0EF1;
+			productRefGroup = 44C065FA27101E0D008D0EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44C065F827101E0D008D0EF1 /* PersistentStorage */,
+				44C0660D27101E0F008D0EF1 /* PersistentStorageTests */,
+				44C0661727101E0F008D0EF1 /* PersistentStorageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44C065F727101E0D008D0EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C0660327101E0F008D0EF1 /* Assets.xcassets in Resources */,
+				44C0660627101E0F008D0EF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0660C27101E0F008D0EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0661627101E0F008D0EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C065F527101E0D008D0EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C0662D27101FD4008D0EF1 /* PersonModel.m in Sources */,
+				44C06638271027C3008D0EF1 /* ViewControllerViewModel.m in Sources */,
+				44C0660127101E0D008D0EF1 /* ViewController.m in Sources */,
+				44C0663027102028008D0EF1 /* PersistentStoreController.m in Sources */,
+				44C066332710262F008D0EF1 /* DataModelController.m in Sources */,
+				44C0660827101E0F008D0EF1 /* main.m in Sources */,
+				44C065FE27101E0D008D0EF1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0660A27101E0F008D0EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C0661327101E0F008D0EF1 /* PersistentStorageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C0661427101E0F008D0EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C0661D27101E0F008D0EF1 /* PersistentStorageUITests.m in Sources */,
+				44C0661F27101E0F008D0EF1 /* PersistentStorageUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C0661027101E0F008D0EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44C065F827101E0D008D0EF1 /* PersistentStorage */;
+			targetProxy = 44C0660F27101E0F008D0EF1 /* PBXContainerItemProxy */;
+		};
+		44C0661A27101E0F008D0EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44C065F827101E0D008D0EF1 /* PersistentStorage */;
+			targetProxy = 44C0661927101E0F008D0EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44C0660427101E0F008D0EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C0660527101E0F008D0EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44C0662027101E0F008D0EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		44C0662127101E0F008D0EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		44C0662327101E0F008D0EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PersistentStorage/PersistentStorage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		44C0662427101E0F008D0EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PersistentStorage/PersistentStorage.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		44C0662627101E0F008D0EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistentStorage.app/Contents/MacOS/PersistentStorage";
+			};
+			name = Debug;
+		};
+		44C0662727101E0F008D0EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersistentStorage.app/Contents/MacOS/PersistentStorage";
+			};
+			name = Release;
+		};
+		44C0662927101E0F008D0EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = PersistentStorage;
+			};
+			name = Debug;
+		};
+		44C0662A27101E0F008D0EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7JQB5ZNKBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intuit.ios.PersistentStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = PersistentStorage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44C065F427101E0D008D0EF1 /* Build configuration list for PBXProject "PersistentStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C0662027101E0F008D0EF1 /* Debug */,
+				44C0662127101E0F008D0EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C0662227101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C0662327101E0F008D0EF1 /* Debug */,
+				44C0662427101E0F008D0EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C0662527101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C0662627101E0F008D0EF1 /* Debug */,
+				44C0662727101E0F008D0EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C0662827101E0F008D0EF1 /* Build configuration list for PBXNativeTarget "PersistentStorageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C0662927101E0F008D0EF1 /* Debug */,
+				44C0662A27101E0F008D0EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44C065F127101E0D008D0EF1 /* Project object */;
+}
